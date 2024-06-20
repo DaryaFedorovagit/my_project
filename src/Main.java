@@ -29,7 +29,7 @@ public class Main {
             int result = 0;
             int index1 = converter(pr[0]);
             int index2 = converter(pr[2]);
-            if (index1 > 10 | index1 < 0 | index2 < 0 | index2 > 10) {
+            if (index1 > 10 | index1 < 1 | index2 < 1 | index2 > 10) {
                 try {
                     throw new IOException("т.к. не удовлетворяет условиям задачи");
                 } finally {
@@ -54,7 +54,7 @@ public class Main {
             int x = Integer.parseInt(pr[0]);
             int y = Integer.parseInt(pr[2]);
             int result;
-            if (x > 10 | x < 0 | y < 0 | y > 10) {
+            if (x > 10 | x < 1 | y < 1 | y > 10) {
                 try {
                     throw new IOException("т.к. не удовлетворяет условиям задачи");
                 } finally {
@@ -76,7 +76,6 @@ public class Main {
     }
         return res;
     }
-
     public static boolean isRomanNumber(String prim) {
         return prim.matches("[IVXLCDM]+");
     }
